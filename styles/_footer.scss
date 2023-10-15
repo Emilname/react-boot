@@ -1,0 +1,68 @@
+.footer {
+  display: flex;
+  padding: 107px 0px;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 199px;
+
+    @include md-max {
+      flex-direction: column;
+      gap: 75px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: flex-start;
+    gap: 75px;
+
+    @include md-max {
+      flex-direction: column;
+    }
+
+    &__title {
+      @include subheading;
+    }
+    &__column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+    }
+    &__list {
+      display: flex;
+      width: 121px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 19px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    &__links {
+      display: flex;
+      padding: 20px 0px;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+
+  &__address {
+    display: flex;
+    align-items: center;
+
+    &__txt {
+      padding: 10px;
+    }
+  }
+}

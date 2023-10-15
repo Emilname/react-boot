@@ -1,0 +1,27 @@
+.contents-section {
+  display: flex;
+  padding: 50px 199px;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  align-self: stretch;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+  }
+  &__cards {
+    display: flex;
+    align-items: center;
+    @include lg-max {
+      flex-direction: column;
+    }
+    gap: 33px;
+  }
+
+  &__button.button {
+    background-color: var(--primary);
+  }
+}

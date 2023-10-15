@@ -1,0 +1,63 @@
+@mixin headline {
+  color: var(--light-text, #fff);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 88px; /* 110% */
+  letter-spacing: 0.2px;
+}
+
+@mixin heading {
+  color: var(--light-text, #fff);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 62px; /* 119.231% */
+  letter-spacing: 0.2px;
+}
+
+@mixin alt-heading {
+  color: var(--light-text, #fff);
+  font-family: Roboto;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 57px; /* 123.913% */
+  letter-spacing: 0.2px;
+}
+
+@mixin subheading {
+  color: var(--light-text, #fff);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.2px;
+}
+
+@mixin subtitle {
+  color: var(--light-text, #fff);
+  /* Link */
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.2px;
+}
+
+@mixin paragraph {
+  color: var(--light-text, #fff);
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.2px;
+}

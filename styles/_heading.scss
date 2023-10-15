@@ -1,0 +1,21 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  &-title {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &-paragraphe {
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+  }
+}

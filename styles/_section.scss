@@ -1,0 +1,28 @@
+.section {
+  &__heading {
+    margin: auto;
+    padding: 10px;
+    @include headline;
+    @include sm-max {
+      @include heading;
+    }
+  }
+
+  &__title {
+    margin: auto;
+    padding: 10px;
+    @include heading;
+  }
+
+  &__title--second {
+    margin: auto;
+    padding: 10px;
+    @include alt-heading;
+  }
+
+  &__subtitle {
+    margin: auto;
+    padding: 10px;
+    @include subheading;
+  }
+}
