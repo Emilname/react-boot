@@ -3,6 +3,8 @@
   justify-content: center;
   padding: 20px 37px 21px 30px;
   margin-bottom: 35px;
+  position: relative;
+  height: 100px;
 
   background-color: var(--bg-color);
 
@@ -64,10 +66,16 @@
 
   &__mobile-button {
     display: none;
-    background-color: inherit;
-    background-image: url("/images/mobile-menu-icon.svg");
     width: 66px;
     height: 53px;
+    cursor: pointer;
+
+    background-color: inherit;
+    background-image: url("/images/mobile-menu-icon.svg");
+
+    &.menu_open {
+      background-image: url("/images/close.svg");
+    }
 
     @include xl-max {
       display: block;
@@ -77,6 +85,35 @@
   &__login-button {
     @include sm-max {
       display: none;
+    }
+  }
+
+  &__mobile-menu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    background-color: white;
+    z-index: 2;
+    display: none;
+    @include xl-max {
+      &.visible {
+        display: block;
+      }
+    }
+
+    &__item {
+      padding: 10px 20px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+    text-align: center;
+    a {
+      @include subheading;
+      color: black;
     }
   }
 }

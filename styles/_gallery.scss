@@ -27,6 +27,10 @@
     align-items: center;
     gap: 33px;
 
+    @include xl-max {
+      width: 900px;
+    }
+
     @include lg-max {
       width: 483px;
     }

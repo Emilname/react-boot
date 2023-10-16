@@ -36,7 +36,7 @@
 
     background: var(--dark-background, #181818);
 
-    @include md-max {
+    @include lg-max {
       width: 352px;
     }
 
