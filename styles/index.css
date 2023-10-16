@@ -553,10 +553,10 @@ main {
   height: 53px;
   cursor: pointer;
   background-color: inherit;
-  background-image: url("/images/mobile-menu-icon.svg");
+  background-image: url("../images/mobile-menu-icon.svg");
 }
 .header__mobile-button.menu_open {
-  background-image: url("/images/close.svg");
+  background-image: url("../images/close.svg");
 }
 @media screen and (max-width: 1199px) {
   .header__mobile-button {
