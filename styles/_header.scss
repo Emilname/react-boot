@@ -1,0 +1,119 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 37px 21px 30px;
+  margin-bottom: 35px;
+  position: relative;
+  height: 100px;
+
+  background-color: var(--bg-color);
+
+  @include sm-max {
+    margin-bottom: 57px;
+    padding: 15px 15px 14px 24px;
+  }
+
+  @include xl-max {
+    display: block;
+    padding-left: 34px;
+    padding-right: 16px;
+  }
+
+  @include xl-min {
+    color: red;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    @include xl-max {
+      justify-content: space-between;
+    }
+  }
+
+  .logo {
+    margin-right: 136px;
+
+    @include xl-max {
+      margin-right: 0;
+    }
+  }
+
+  &__nav {
+    margin-right: 174px;
+
+    @include xl-max {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    padding: 10px;
+  }
+
+  &__mobile-button {
+    display: none;
+    width: 66px;
+    height: 53px;
+    cursor: pointer;
+
+    background-color: inherit;
+    background-image: url("../images/mobile-menu-icon.svg");
+
+    &.menu_open {
+      background-image: url("../images/close.svg");
+    }
+
+    @include xl-max {
+      display: block;
+    }
+  }
+
+  &__login-button {
+    @include sm-max {
+      display: none;
+    }
+  }
+
+  &__mobile-menu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    background-color: white;
+    z-index: 2;
+    display: none;
+    @include xl-max {
+      &.visible {
+        display: block;
+      }
+    }
+
+    &__item {
+      padding: 10px 20px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+    text-align: center;
+    a {
+      @include subheading;
+      color: black;
+    }
+  }
+}

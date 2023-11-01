@@ -1,0 +1,49 @@
+.section-partners {
+  display: flex;
+  padding: 50px 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  align-self: stretch;
+
+  &__heading {
+    max-width: 595px;
+    @include sm-max {
+      max-width: 343px;
+    }
+  }
+
+  &__brands {
+    display: flex;
+    align-items: center;
+    gap: 74px;
+
+    @include lg-max {
+      max-width: 286px;
+      flex-direction: column;
+
+      gap: 50px;
+    }
+  }
+
+  .brands-row {
+    height: 71px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 74px;
+
+    @include lg-max {
+      gap: 50px;
+      display: flex;
+    }
+
+    &.second {
+      height: 51px;
+    }
+
+    img {
+      height: 100%;
+    }
+  }
+}

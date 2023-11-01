@@ -1,0 +1,21 @@
+@import "./breakpoints";
+@import "./mixins.scss";
+@import "./typography.scss";
+
+@import "./common.scss";
+
+@import "./heading.scss";
+@import "./card.scss";
+@import "./section.scss";
+@import "./features.scss";
+@import "./welcome.scss";
+@import "./contents.scss";
+@import "./header.scss";
+@import "./gallery.scss";
+@import "./partners.scss";
+@import "./testimonials.scss";
+@import "./cta.scss";
+@import "./footer.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700;9..40,900&family=Roboto:wght@400;500;900&display=swap");
